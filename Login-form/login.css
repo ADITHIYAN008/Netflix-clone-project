@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --poppins-font: "Poppins", sans-serif;
+  --roboto-font: "Roboto", sans-serif;
+  --btn-bg-color: rgba(229, 9, 20, 0.8);
+  --light-color: rgba(255, 255, 255, 0.6);
+  --light-bg-color: rgba(0, 0, 0, 0.7);
+}
+
+body {
+  width: 100%;
+  height: 170vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("images/IN-en-20240101-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: #fff;
+}
+
+.Netflix-logo {
+  width: 220px;
+  height: auto;
+  padding-top: 20px;
+  padding-left: 40px;
+}
+
+.sign-in {
+  background-color: var(--light-bg-color);
+  width: 450px;
+  height: 600px;
+  position: absolute;
+  top: 100px;
+  left: 33%;
+  padding: 60px;
+  font-family: var(--roboto-font);
+  font-weight: 100;
+  border-radius: 3px;
+}
+
+.sign-in h3 {
+  font-family: var(--roboto-font);
+  font-size: 2rem;
+  padding-bottom: 30px;
+}
+
+.email-phone,
+.password {
+  padding: 20px 150px 20px 10px;
+  background-color: #333;
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.email-phone::placeholder,
+.password::placeholder {
+  font-size: 1rem;
+  color: #888;
+}
+
+.sign-in-btn {
+  display: block;
+  width: 100%;
+  background-color: var(--btn-bg-color);
+  border: none;
+  padding: 17px 0;
+  border-radius: 3px;
+  font-size: 1.1rem;
+  color: #fff;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.remember {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.checkbox input {
+  height: 15px;
+  width: 15px;
+}
+
+.checkbox label {
+  font-size: 0.8rem;
+  letter-spacing: 0.2px;
+  color: var(--light-color);
+}
+
+small {
+  color: var(--light-color);
+}
+
+.ext-content {
+  color: var(--light-color);
+  letter-spacing: 0.2px;
+}
+
+.ext-content p {
+  margin-bottom: 10px;
+}
+
+.ext-content span:hover,
+small:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.sign-up {
+  color: #fff;
+}
+
+.protected-tagline {
+  font-size: 0.8rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 280px;
+  background-color: var(--light-bg-color);
+  padding: 40px 0px 40px 200px;
+  font-family: var(--roboto-font);
+  color: var(--light-color);
+  letter-spacing: 0.2px;
+}
+
+footer p {
+  margin-bottom: 30px;
+}
+
+footer span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  flex-flow: row;
+}
+
+.nav-links section {
+  display: flex;
+  flex-flow: column;
+  margin-right: 150px;
+  margin-bottom: 30px;
+}
+
+.nav-links section a {
+  text-decoration: none;
+  color: var(--light-color);
+  font-size: 0.8rem;
+  margin-bottom: 15px;
+}
+
+.nav-links section a:hover {
+  text-decoration: underline;
+}
+
+footer .lang {
+  border: 1px solid #444;
+  background-color: #000;
+  color: var(--light-color);
+  padding: 15px 15px;
+}
